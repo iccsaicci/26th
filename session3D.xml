@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <NEKTAR>
     <EXPANSIONS>
-        <E COMPOSITE="C[272,273]" NUMMODES="4" TYPE="MODIFIED" FIELDS="u,v,w" />
-        <E COMPOSITE="C[272,273]" NUMMODES="3" TYPE="MODIFIEDQUADPLUS1" FIELDS="p" />
+        <E COMPOSITE="C[272,273]" NUMMODES="3" TYPE="MODIFIED" FIELDS="u,v,w" />
+        <E COMPOSITE="C[272,273]" NUMMODES="2" TYPE="MODIFIEDQUADPLUS1" FIELDS="p" />
     </EXPANSIONS>
     <CONDITIONS>
         <SOLVERINFO>
@@ -14,7 +14,6 @@
             <I PROPERTY="TimeIntegrationMethod" VALUE="IMEXOrder2" />
             <I PROPERTY="GJPStabilisation" VALUE="SemiImplicit" />
             <I PROPERTY="SpectralVanishingViscosity" VALUE="DGKernel" />
-            <I PROPERTY="USEFFT"            VALUE="FFTW"/>
         </SOLVERINFO>
 	
 	<GLOBALSYSSOLNINFO>
@@ -91,9 +90,9 @@
     <FILTERS> 
         <FILTER TYPE="HistoryPoints">
               <PARAM NAME="OutputFile">History</PARAM> <PARAM NAME="OutputFrequency">10</PARAM> <PARAM NAME="Points">
-                22.1 44.1 0.5
-                22.1 41.6 0.5
-                22.1 39 0.5
+                43.5 41.5 0.5
+                43.5 42.5 0.5
+                43.5 43.5 0.5
 	      </PARAM>
 	    </FILTER>
     </FILTERS>
